@@ -22,4 +22,11 @@ public class restauranteController {
         restaurante.add(new restaurante(3,"restaurante 3","0912811823019", "pizzaria", "rua 3"));
     }
 
+    @GetMapping
+    public String listarRestaurantes() {
+        String lista = "";
+        for (int i = 0; i < restaurante.size(); i++)
+            lista = lista + "\n"+restaurante.get(i).getNome()+" ("+restaurante.get(i).getId()+")";
+        return lista;
+    }   
 }
