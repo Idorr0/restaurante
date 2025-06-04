@@ -36,4 +36,10 @@ public class restauranteController {
     public void criarRestaurante(@RequestBody Restaurante restaurante) {
         restaurantes.add(restaurante);
     }
+
+    @DeleteMapping("/{id}")
+    public void apagarRestaurante(@PathVariable int id){
+        restaurantes.remove(id);
+    }
+
 }

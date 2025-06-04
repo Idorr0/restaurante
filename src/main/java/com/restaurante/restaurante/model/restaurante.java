@@ -1,11 +1,14 @@
 package com.restaurante.restaurante.model;
 
+import java.util.ArrayList;
+
 public class Restaurante {
     private int id;
     private String nome;
     private String cnpj;
     private String categoria;   
     private String endereco;
+    private ArrayList<ItemCardapio> itensCardapio = new ArrayList<>();
 
 public Restaurante(int id, String nome, String cnpj, String categoria, String endereco) {
     this.id = id;
