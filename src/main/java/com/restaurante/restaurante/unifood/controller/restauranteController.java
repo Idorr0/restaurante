@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import com.restaurante.restaurante.model.Restaurante;
+import com.restaurante.restaurante.model.temp;
 
 
 @RestController
 @RequestMapping("/restaurante")
 public class restauranteController {
-    private ArrayList<Restaurante> restaurantes = new ArrayList<>();
+    private ArrayList<temp> restaurantes = new ArrayList<>();
     public restauranteController(){
-        restaurantes.add(new Restaurante(1,"restaurante 1","0912811823019", "pizzaria", "rua 1"));
-        restaurantes.add(new Restaurante(2,"restaurante 2","0912811823019", "pizzaria", "rua 2"));
-        restaurantes.add(new Restaurante(3,"restaurante 3","0912811823019", "pizzaria", "rua 3"));
+        restaurantes.add(new temp(1,"restaurante 1","0912811823019", "pizzaria", "rua 1"));
+        restaurantes.add(new temp(2,"restaurante 2","0912811823019", "pizzaria", "rua 2"));
+        restaurantes.add(new temp(3,"restaurante 3","0912811823019", "pizzaria", "rua 3"));
     }
 
     @GetMapping
@@ -33,7 +33,7 @@ public class restauranteController {
     }
     
     @PostMapping
-    public void criarRestaurante(@RequestBody Restaurante restaurante) {
+    public void criarRestaurante(@RequestBody temp restaurante) {
         restaurantes.add(restaurante);
     }
 
