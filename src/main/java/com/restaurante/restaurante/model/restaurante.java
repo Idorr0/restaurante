@@ -3,6 +3,7 @@ package com.restaurante.restaurante.model;
 import java.util.ArrayList;
 
 public class Restaurante {
+    
     private int id;
     private String nome;
     private String cnpj;
