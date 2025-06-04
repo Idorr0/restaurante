@@ -1,13 +1,13 @@
 package com.restaurante.restaurante.model;
 
-public class restaurante {
+public class Restaurante {
     private int id;
     private String nome;
     private String cnpj;
     private String categoria;   
     private String endereco;
 
-public restaurante(int id, String nome, String cnpj, String categoria, String endereco) {
+public Restaurante(int id, String nome, String cnpj, String categoria, String endereco) {
     this.id = id;
     this.nome = nome;
     this.cnpj = cnpj;
