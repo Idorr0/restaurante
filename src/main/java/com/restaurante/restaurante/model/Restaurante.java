@@ -2,7 +2,7 @@ package com.restaurante.restaurante.model;
 
 import java.util.ArrayList;
 
-public class temp {
+public class Restaurante {
     
     private int id;
     private String nome;
@@ -11,7 +11,7 @@ public class temp {
     private String endereco;
     private ArrayList<ItemCardapio> itensCardapio = new ArrayList<>();
 
-public temp(int id, String nome, String cnpj, String categoria, String endereco) {
+public Restaurante(int id, String nome, String cnpj, String categoria, String endereco) {
     this.id = id;
     this.nome = nome;
     this.cnpj = cnpj;
