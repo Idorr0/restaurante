@@ -14,7 +14,7 @@ import com.restaurante.restaurante.Service.ItemCardapioService;
 import com.restaurante.restaurante.model.ItemCardapio;
 
 @RestController
-@RequestMapping("/itesCardapio")
+@RequestMapping("/itensCardapio")
 public class ItemCardapioController {
 
     @Autowired
