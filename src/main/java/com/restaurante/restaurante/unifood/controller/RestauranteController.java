@@ -31,7 +31,7 @@ public class RestauranteController {
 
     @PostMapping
     public Restaurante criar(@RequestBody Restaurante restaurante) {
-        return service.criar(restaurante);
+        return service.criar(restaurante); 
     }
 
     @DeleteMapping("/{id}")
