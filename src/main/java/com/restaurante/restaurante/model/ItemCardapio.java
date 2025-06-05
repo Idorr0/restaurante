@@ -1,7 +1,9 @@
 package com.restaurante.restaurante.model;
 
+import jakarta.persistence.Id;
+
 public class ItemCardapio {
-    
+    @Id
     private int id;
     private String nome;
     private String descricao;

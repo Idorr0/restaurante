@@ -2,8 +2,14 @@ package com.restaurante.restaurante.model;
 
 import java.util.ArrayList;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import jakarta.persistence.Id;
+
+@Document(collection = "Restaurantes")
 public class Restaurante {
-    
+
+    @Id
     private int id;
     private String nome;
     private String cnpj;
