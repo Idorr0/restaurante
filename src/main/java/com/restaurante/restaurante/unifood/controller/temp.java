@@ -19,7 +19,7 @@ import com.restaurante.restaurante.model.Restaurante;
 
 @RestController
 @RequestMapping("/restaurante")
-public class RestauranteController {
+public class temp {
 
     @Autowired
     private RestauranteService service;
