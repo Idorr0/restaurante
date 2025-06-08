@@ -2,9 +2,16 @@ package com.restaurante.restaurante.dto;
 
 public class PedidoDTO {
 
+    private String id;
     private String clienteId;
     private Double valorTotal;
     
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) {
+        this.id = id;
+    }
     public String getClienteId() {
         return clienteId;
     }
