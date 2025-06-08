@@ -8,13 +8,13 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class EntregaClient {
 
-    private static final String BASE_URL = "https://reasonable-happiness-production.up.railway.app/api/deliveries";
+    private static final String BASE_URL = "https://reasonable-happiness-production.up.railway.app/api/entregadores/assign";
 
     @Autowired
     private RestTemplate restTemplate;
 
     public AtribuirEntregaResponse atribuirEntrega(String orderId) {
-        String url = BASE_URL + "/assign/" + orderId;
+        String url = BASE_URL + orderId;
         return restTemplate.postForObject(url, null, AtribuirEntregaResponse.class);
     }
 }
