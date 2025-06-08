@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 @Component
 public class PedidoClient {
 
-    private static final String BASE_URL = "https://pedidoplus-production.up.railway.app"; // Altere para o endereço real
+    private static final String BASE_URL = "pedidoplus-production.up.railway.app"; // Altere para o endereço real
     private static final Logger logger = LoggerFactory.getLogger(PedidoClient.class);
 
     @Autowired
