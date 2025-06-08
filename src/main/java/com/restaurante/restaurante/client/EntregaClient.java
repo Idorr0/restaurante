@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class EntregaClient {
 
-    private static final String BASE_URL = "https://reasonable-happiness-production.up.railway.app/api/entregadores/assign/ ";
+    private static final String BASE_URL = "https://reasonable-happiness-production.up.railway.app/api/entregadores/assign/";
 
     @Autowired
     private RestTemplate restTemplate;
