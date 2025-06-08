@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 @Component
 public class PedidoClient {
 
-    private static final String BASE_URL = "pedidoplus-production.up.railway.app/api/pedidos"; // Altere para o endereço real
+    private static final String BASE_URL = "https://pedidoplus-production.up.railway.app/api/pedidos"; // Altere para o endereço real
     private static final Logger logger = LoggerFactory.getLogger(PedidoClient.class);
 
     @Autowired
@@ -23,6 +23,8 @@ public class PedidoClient {
 
     public List<PedidoDTO> listarPedidos() {
         try {
+            String json = restTemplate.getForObject(BASE_URL, String.class);
+            logger.info("JSON recebido: {}", json);
             PedidoDTO[] pedidos = restTemplate.getForObject(BASE_URL, PedidoDTO[].class);
             if (pedidos != null) {
                 return Arrays.asList(pedidos);
