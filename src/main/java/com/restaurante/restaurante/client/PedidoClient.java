@@ -23,7 +23,7 @@ public class PedidoClient {
 
     public List<PedidoDTO> listarPedidos() {
         try {
-            PedidoDTO[] pedidos = restTemplate.getForObject(BASE_URL + "/pedidos", PedidoDTO[].class);
+            PedidoDTO[] pedidos = restTemplate.getForObject(BASE_URL + "api/pedidos", PedidoDTO[].class);
             if (pedidos != null) {
                 return Arrays.asList(pedidos);
             } else {
