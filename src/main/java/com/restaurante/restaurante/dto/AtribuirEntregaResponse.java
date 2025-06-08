@@ -6,6 +6,15 @@ public class AtribuirEntregaResponse {
     private String orderId;
     private String status;
 
+    public AtribuirEntregaResponse() {}
+
+    public AtribuirEntregaResponse(String id, String entregadorId, String orderId, String status) {
+        this.id = id;
+        this.entregadorId = entregadorId;
+        this.orderId = orderId;
+        this.status = status;
+    }
+    
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
 
