@@ -35,7 +35,7 @@ public class RestauranteController {
         service.deletar(id);
     }
 
-    @GetMapping("/api/pedidos/todos-pedidos") 
+    @GetMapping("/api/pedidos/todos") 
     public List<PedidoDTO> listarTodosPedidos() {
         return pedidoClient.listarPedidos();
 }
